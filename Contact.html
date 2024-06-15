@@ -13,21 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js"></script>
     <title>Start</title>
-    <style>
-      body {
-        font-family: "Work Sans", sans-serif;
-        font-size: 15px;
-        line-height: 1.25;
-        font-weight: 400;
-      }
-      .Crimson-Text {
-        font-family: "Crimson Text", serif;
-        font-weight: 700;
-      }
-    </style>
   </head>
   <body>
     <header class="bg-green">
@@ -59,9 +48,51 @@
             </p>
           </div>
         </div>
-        <div>
-          <div></div>
-          <div></div>
+        <div
+          class="flex flex-col xl:flex-row-reverse gap-[20px] xl:gap-[30px] mb-[60px] xl:mb-[90px]"
+        >
+          <div class="flex-1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.547149551059!2d106.70460227451707!3d10.76934165932541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f418f5d9ff3%3A0xebf131d44bdf7af9!2zSOG6p20gVGjhu6cgVGhpw6ptLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1718430542273!5m2!1svi!2s"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="flex-1">
+            <form class="flex flex-col gap-[21px]">
+              <div class="flex flex-col gap-[16px]">
+                <label for="name">Name</label
+                ><input
+                  type="text"
+                  id="name"
+                  class="bg-cream border rounded-[5px] h-[38px]"
+                />
+              </div>
+              <div class="flex flex-col gap-[16px]">
+                <label for="email">Email</label
+                ><input
+                  type="email"
+                  id="email"
+                  class="bg-cream border rounded-[5px] h-[38px]"
+                />
+              </div>
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="bg-cream w-full h-[140px] xl:h-[75px] border rounded-[5px]"
+              ></textarea>
+              <button
+                class="bg-dark text-white text-[20px] border rounded-[5px] py-[12px]"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
